@@ -1,0 +1,22 @@
+body:not(.home) {
+    .navbar {
+        background: $light;
+    }
+}
+
+.navbar {
+    background: rgba(255,255,255,.6);
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.navbar-logo,
+.custom-logo,
+.custom-logo-link {
+    width: 200px;
+}
+.navbar-nav {
+    margin-left: auto;
+}

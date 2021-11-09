@@ -1,0 +1,43 @@
+.top-header {
+    padding: .4rem 0;
+    position: relative;
+    z-index: 2;
+    color: $primary;
+    background: darken($light, 30%);
+
+    .mda-link-img {
+        width: 5rem;
+    }
+}
+
+.searchbar {
+    .form-control {
+        @media screen and (max-width: 500px) {
+            max-width: 70%;
+            margin-left: .1rem;
+        }
+    }
+    
+}
+
+.user-link {
+    padding-left: 1rem;
+    color: $light;
+    @include transition;
+
+    &:hover {
+        color: darken($light, 10%);
+    }
+}
+
+.woocommerce-store-notice,
+p.demo_store {
+    background-color: $primary;
+}
+
+.breadcrumb-container {
+    padding: .5rem 0;
+}
+#breadcrumbs {
+    font-size: .8rem;
+}

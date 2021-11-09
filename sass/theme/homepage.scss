@@ -1,0 +1,165 @@
+body.home {
+  background: $light url('../../../wp-content/uploads/2021/11/motorcycle-road-bg.jpg') no-repeat top center / cover;
+
+  &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: $dark;
+      opacity: .8;
+  }
+}
+
+.content-home {
+  position: relative;
+  color: $light;
+
+  .btn-secondary {
+    border: 1px solid darken($light, 60%);
+  }
+}
+
+#welcome {
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 2;
+  color: $light;
+
+  @media screen and (max-width: 576px) {
+    flex-direction: column;
+
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  .welcome-column {
+    margin-right: 1rem;
+    flex: 1 1 30%;
+    
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media screen and (max-width: 576px) {
+      flex: 1 1 100%;
+    }
+    @media screen and (min-width: 577px) and (max-width: 1025px) {
+      flex: 1 1 47%;
+    }
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+
+    div {
+      flex: 1 1 33%;
+    }
+    .img-container {
+      // margin-bottom: 1rem;
+    }
+  }
+
+  a {
+    color: $light;
+  }
+  img {
+    margin-bottom: 1rem;
+    @include border-radius;
+  }
+}
+.donations {
+  padding: 1.3rem 1rem;
+  color: $light;
+  background: $secondary;
+  @include border-radius;
+  border: 1px solid darken($light, 60%);
+
+  .donations-container {
+
+    @media screen and (min-width: 577px) and (max-width: 1025px) {
+      display: flex;
+      justify-content: space-between;
+
+      > div {
+        flex: 45%;
+      }
+    }
+  }
+  
+}
+
+#shop-home {
+  // sue this to remove the margin from the bottom of the 
+  // eCommerce images on the homepage
+  .woocommerce {
+    ul.products {
+      li.product {
+        a {
+          img {
+            margin: 0;
+            @include border-radius();
+          }
+        }
+      }
+    }
+  }
+  .shop-home-heading,
+  .shop-home-text {
+    text-align: center;
+  }
+  .products {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 576px) {
+      flex-direction: column;
+    }
+    @media screen and (min-width: 577px) and (max-width: 1024px) {
+      flex-direction: column;
+    }
+
+    .product-category  {
+      flex: 25%;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      @include box-shadow();
+
+      .woocommerce-loop-category__title {
+        position: absolute;
+        bottom: 0;
+        left: -100%;
+        width: 100%;
+        height: auto;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        color: $light;
+        background: $primary;
+        @include transition();
+        border-radius: 0 0 4px 4px;
+      }
+      &:hover {
+        .woocommerce-loop-category__title {
+          left: 0;
+        }
+      }
+
+      @media screen and (max-width: 576px) {
+        flex: 1 1 100%;
+      }
+      @media screen and (min-width: 577px) and (max-width: 1024px) {
+        flex: 1 1 47%;
+      }
+    }
+  }
+  .woocommerce-loop-category__title {
+    .count  {
+      display: none;
+    }
+  }
+}

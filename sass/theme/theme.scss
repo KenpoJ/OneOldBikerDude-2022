@@ -1,0 +1,88 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+body {
+    position: relative;
+    font-family: 'Overpass', sans-serif;
+    font-size: 17px;
+    line-height: 1.2em;
+    color: $dark;
+    // background: rgba(0,0,0,.3);
+}
+
+h1, h2, h3, h4, h5 ,h6 {
+    font-family: 'Maven Pro', sans-serif;
+}
+h1 {
+    font-size: 2.2rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.75rem;
+}
+h4 {
+    font-size: 1.5rem;
+}
+h5 {
+    font-size: 1.2rem;
+}
+h6 {
+    font-size: 1rem;
+}
+a {
+    @include transition;
+}
+
+/* #content {
+    min-height: 65vh;
+} */
+.content {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+section {
+    padding-bottom: 3rem;
+}
+
+.grid {
+    display: grid;
+}
+
+hr {
+    margin: 2rem 0;
+    height: 3px;
+    background: $primary;
+    border: none;
+}
+
+.featherlight {
+    .featherlight-content {
+        background: #FFF !important;
+    }
+}
+
+.wp-block-columns {
+    &.card-deck {
+        margin-top: 3rem;
+        justify-content: center;
+
+        .wp-block-column {
+            margin: 0;
+            margin-right: 1.3rem;
+            padding: 0;
+            text-align: center;
+            flex: 0 1 45%;
+            border: 1px solid $light;
+            @include border-radius;
+
+            .card-title {
+                margin: 0;
+                padding: .75rem 0;
+                text-align: center;
+            }
+            .card-body {
+                text-align: left;
+            }
+        }
+    }
+}

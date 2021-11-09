@@ -1,0 +1,24 @@
+/*
+Theme Name: OOBD Understrap 2022
+Theme URI: http://example.com/oobd-understrap-child/
+description: >-
+  OOBD Understrap 2022 Theme
+Author: Jason Lyman
+Author URI: http://jason.lymannuthouse.com
+Template: understrap
+Version: 1.0.0
+*/
+
+@import "sass/theme/theme_variables";
+@import "sass/assets/bootstrap4";
+@import "sass/understrap/understrap";
+@import "sass/understrap/woocommerce";
+@import "sass/theme/theme"; 
+@import "sass/theme/header"; 
+@import "sass/theme/navigation"; 
+@import "sass/theme/footer"; 
+@import "sass/theme/homepage"; 
+@import "sass/theme/posts"; 
+@import "sass/theme/tours"; 
+@import "sass/theme/sidebar"; 
+@import "sass/theme/mailchimp"; 

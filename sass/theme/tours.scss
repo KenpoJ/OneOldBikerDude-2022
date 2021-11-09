@@ -1,0 +1,50 @@
+.wp-block-column {
+  &.col-tour {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    position: relative;
+    @include border-radius;
+    background: $dark-30;
+    border: 1px solid $secondary;
+
+    &:before {
+      @include motorcycle-icon;
+    }
+
+    .btn {
+      margin-top: auto;
+    }
+  }
+}
+.tour-start {
+  margin-bottom: 0;
+  font-weight: bold;
+  font-style: italic;
+}
+.tour-length {
+  font-style: italic;
+  color: $primary;
+}
+.tour-info-center {
+  margin: 1.5rem 0;
+  padding: 1.2rem;
+  border-top: 1px solid $dark;
+  border-bottom: 1px solid $dark;
+
+  i {
+    margin-bottom: .8rem;
+    color: lighten($dark, 30%);
+  }
+}
+.tour-information {
+  margin-bottom: 0;
+  font-style: italic;
+  font-size: .9rem;
+}
+.tour-itinerary-title {
+  padding: .5rem;
+  color: white;
+  background: lighten($dark, 30%);
+  @include border-radius;
+}

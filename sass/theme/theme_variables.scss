@@ -1,0 +1,45 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
+// Just copy a variable from src/sass/bootstrap4/_variables.scss, paste it here and edit the value.
+
+
+/*======================================
+    VARIABLES
+=======================================*/
+// $primary: rgba(165,34,38,1);
+// $secondary: rgba(57,64,85,1);
+// $dark: rgba(62,62,61,1);
+// $light: lighten($secondary, 50%);
+
+$primary: #851b1f;
+$secondary: #394055;
+
+$dark: #3e3e3d;
+$light: #EFEFEF;
+$dark-30: lighten($dark, 70%);
+
+
+/*======================================
+    MIXINS
+=======================================*/
+@mixin transition {
+  transition: all .2s ease;
+}
+@mixin border-radius {
+    border-radius: 4px;
+}
+@mixin box-shadow {
+    box-shadow: 0 6px 13px 0px rgba(0,0,0,.5);
+}
+@mixin motorcycle-icon {
+    content: '\f21c';
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 2rem;
+    color: $primary;
+}
